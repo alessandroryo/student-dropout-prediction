@@ -3,11 +3,10 @@ import pandas as pd
 import joblib
 
 # Load the saved model, scaler, one-hot encoder, and training columns from the 'model' folder
-model = joblib.load('model/random_forest_model.pkl')
-scaler = joblib.load('model/scaler.pkl')
-encoder = joblib.load('model/onehot_encoder.pkl')
-training_columns = joblib.load('model/training_columns.pkl')
-
+model = joblib.load('model/random_forest_model.joblib')
+scaler = joblib.load('model/scaler.joblib')
+encoder = joblib.load('model/onehot_encoder.joblib')
+training_columns = joblib.load('model/training_columns.joblib')
 
 # Title of the app with an icon
 st.markdown("<h1 style='text-align: left;'>🎓 Student Dropout Prediction</h1>", unsafe_allow_html=True)
