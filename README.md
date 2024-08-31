@@ -59,6 +59,8 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+You can also access the deployed Streamlit application here: [Student Dropout Prediction App](https://student-dropout-prediction-alessandroryo.streamlit.app/).
+
 ## Conclusion
 
 The project successfully developed a machine learning model to predict student dropout risks with reasonable accuracy. The model, when integrated with the business dashboard in Looker Studio, provides valuable insights that can help the institution reduce dropout rates and improve overall student retention.
