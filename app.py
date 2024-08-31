@@ -1,12 +1,19 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 
 # Load the saved model, scaler, one-hot encoder, and training columns from the 'model' folder
-model = joblib.load('model/random_forest_model.joblib')
-scaler = joblib.load('model/scaler.joblib')
-encoder = joblib.load('model/onehot_encoder.joblib')
-training_columns = joblib.load('model/training_columns.joblib')
+with open('model/random_forest_model.pkl', 'rb') as f:
+    model = pickle.load(f)
+
+with open('model/scaler.pkl', 'rb') as f:
+    scaler = pickle.load(f)
+
+with open('model/onehot_encoder.pkl', 'rb') as f:
+    encoder = pickle.load(f)
+
+with open('model/training_columns.pkl', 'rb') as f:
+    training_columns = pickle.load(f)
 
 # Title of the app with an icon
 st.markdown("<h1 style='text-align: left;'>🎓 Student Dropout Prediction</h1>", unsafe_allow_html=True)
