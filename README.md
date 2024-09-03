@@ -37,7 +37,7 @@ streamlit run app.py
 
 ## Business Dashboard
 
-The business dashboard, built using Looker Studio, visualizes key insights about student performance and dropout risks. It provides stakeholders with actionable information to identify at-risk students and understand the factors contributing to dropout. [Include a link to access the dashboard if available.]
+The business dashboard, built using Looker Studio, visualizes key insights about student performance and dropout risks. It provides stakeholders with actionable information to identify at-risk students and understand the factors contributing to dropout. You can view the business dashboard here: [Looker Studio Dashboard](https://lookerstudio.google.com/reporting/5bde8ef5-73d2-4edb-8dad-1425eb49d6b2).
 
 ## Running the Machine Learning System
 
